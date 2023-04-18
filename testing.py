@@ -3,9 +3,9 @@ import webbrowser
 import random
 import ctypes
 
-movemouse = False
-rickroll = False
-openapplications = False
+movemouse = mousebool
+rickroll = rickbool
+openapplications = openbool
 
 
 movements = 0
