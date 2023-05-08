@@ -18,8 +18,8 @@ if rickroll == True:
         webbrowser.open('https://www.youtube.com/watch?v=069BsV5qn70&t=43s')
 
 
-if movemouse == True
-    while True
+if movemouse == True:
+    while True:
         if movements < 50:
             pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
             movements = movements + 1
