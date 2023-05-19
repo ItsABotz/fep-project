@@ -16,7 +16,7 @@ def randomword(length):
 
 pausetime = 'pausebool'
 
-movements = 0
+movements = 'appnumber'
 
 sleep(pausetime)
 
