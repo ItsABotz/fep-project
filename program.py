@@ -9,6 +9,8 @@ pyautogui.FAILSAFE = True
 movemouse = 'mousebool'
 rickroll = 'rickbool'
 openapplications = 'openbool'
+number = 0
+maxopen = 'maxopen'
 
 def randomword(length):
     letters = string.ascii_lowercase
@@ -24,37 +26,32 @@ if rickroll == True:
         webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 
 
-if movemouse == True:
-    while True:
-        if movements < 50:
-            pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
-            movements = movements + 1
-            print(movements)
-        elif movements == 50:
-            break
+def mousemove():
+    if movemouse == True:
+        while True:
+            if movements < 50:
+                pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
+                movements = movements + 1
+                print(movements)
+            elif movements == 50:
+                print("done")
 
-number = 0
 
-maxopen = 'maxopen'
-
-if openapplications == True:
-    if number < maxopen:
-        sleep(3)
-        pyautogui.hotkey("win")
-        sleep(0.2)
-        pyautogui.typewrite(randomword(1))
-        sleep(0.3)
-        pyautogui.hotkey("enter")
-        sleep(0.3)
-        number = number + 1
-    else:
-        exit
+def appopens():
+    if openapplications == True:
+        if number < maxopen:
+            sleep(3)
+            pyautogui.hotkey("win")
+            sleep(0.2)
+            pyautogui.typewrite(randomword(1))
+            sleep(0.3)
+            pyautogui.hotkey("enter")
+            sleep(0.3)
+            number = number + 1
+        else:
+            print("done")
+            
+while True:
+    appopens()
+    mousemove()
     
-    
-        
-    
-
-#input = pyautogui.prompt('This lets the user type in a string and press OK.')
-
-
-#pyautogui.alert('This is an alert box.')
