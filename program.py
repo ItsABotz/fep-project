@@ -52,7 +52,7 @@ def appopens():
             
 while True:
     sleep(pausetime)
-    rickgo
+    rickgo()
     appopens()
     mousemove()
     
