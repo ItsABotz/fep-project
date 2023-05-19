@@ -22,19 +22,20 @@ movements = 0
 
 sleep(pausetime)
 
-if rickroll == True:
-        webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+
+def rickgo():
+    if rickroll == True:
+            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 
 
 def mousemove():
     if movemouse == True:
-        while True:
-            if movements < 50:
-                pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
-                movements = movements + 1
-                print(movements)
-            elif movements == 50:
-                print("done")
+        if movements < 50:
+            pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
+            movements = movements + 1
+            print(movements)
+        elif movements == 50:
+            print("done")
 
 
 def appopens():
@@ -52,6 +53,7 @@ def appopens():
             print("done")
             
 while True:
+    rickgo
     appopens()
     mousemove()
     
