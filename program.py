@@ -20,8 +20,6 @@ pausetime = 'pausebool'
 
 movements = 0
 
-sleep(pausetime)
-
 
 def rickgo():
     if rickroll == True:
@@ -53,6 +51,7 @@ def appopens():
             print("done")
             
 while True:
+    sleep(pausetime)
     rickgo
     appopens()
     mousemove()
