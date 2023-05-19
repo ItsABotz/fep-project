@@ -30,7 +30,7 @@ if movemouse == True:
             pyautogui.moveTo(random.randint(0,1920), random.randint(0,1080), duration=0.1)
             movements = movements + 1
             print(movements)
-        if movements == 50:
+        elif movements == 50:
             break
 
 number = 0
