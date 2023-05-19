@@ -21,7 +21,7 @@ movements = 0
 sleep(pausetime)
 
 if rickroll == True:
-        webbrowser.open('https://www.youtube.com/watch?v=069BsV5qn70&t=43s')
+        webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 
 
 if movemouse == True:
