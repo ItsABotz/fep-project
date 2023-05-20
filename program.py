@@ -11,14 +11,12 @@ rickroll = 'rickbool'
 openapplications = 'openbool'
 number = 0
 maxopen = 'maxopen'
+pausetime = 'pausebool'
+movements = 0
 
 def randomword(length):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
-
-pausetime = 'pausebool'
-
-movements = 0
 
 
 def rickgo():
@@ -51,8 +49,7 @@ def appopens():
             print("done")
             
 while True:
-    sleep(pausetime)
-    rickgo()
+    rickgo
     appopens()
     mousemove()
     
